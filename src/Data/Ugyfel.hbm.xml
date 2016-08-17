@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 2, 2016 9:44:35 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Data.Ugyfel" table="ugyfel" catalog="oconn" optimistic-lock="version">
+        <id name="folyosz" type="int">
+            <column name="folyosz" />
+            <generator class="assigned" />
+        </id>
+        <property name="nev" type="string">
+            <column name="nev" length="50" not-null="true" />
+        </property>
+        <property name="cim" type="string">
+            <column name="cim" length="100" not-null="true" />
+        </property>
+        <property name="statusz" type="int">
+            <column name="statusz" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

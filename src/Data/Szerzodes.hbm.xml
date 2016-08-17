@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 2, 2016 9:44:35 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Data.Szerzodes" table="szerzodes" catalog="oconn" optimistic-lock="version">
+        <id name="szerszam" type="int">
+            <column name="szerszam" />
+            <generator class="assigned" />
+        </id>
+        <property name="folyosz" type="int">
+            <column name="folyosz" not-null="true" />
+        </property>
+         <property name="egyenleg" type="double">
+            <column name="egyenleg" not-null="true" />
+        </property>
+        <property name="kedvezmeny" type="double">
+            <column name="kedvezmeny" />
+        </property>
+        <property name="tv" type="int">
+            <column name="tv" />
+        </property>
+        <property name="telefon" type="int">
+            <column name="telefon" />
+        </property>
+        <property name="internet" type="int">
+            <column name="internet" />
+        </property>
+        <property name="fixip" type="int">
+            <column name="fixip" />
+        </property>
+        <property name="havidij" type="double">
+            <column name="havidij" />
+        </property>
+    </class>
+</hibernate-mapping>

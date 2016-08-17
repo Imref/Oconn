@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 2, 2016 9:44:35 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Data.Telefon" table="telefon" catalog="oconn" optimistic-lock="version">
+        <id name="tid" type="int">
+            <column name="tid" />
+            <generator class="assigned" />
+        </id>
+        <property name="csnev" type="string">
+            <column name="csnev" length="50" not-null="true" />
+        </property>
+        <property name="thdij" type="int">
+            <column name="thdij" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
